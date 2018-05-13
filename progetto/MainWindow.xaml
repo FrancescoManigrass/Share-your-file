@@ -1,0 +1,381 @@
+﻿<Window x:Class="progetto.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:progetto"
+ 
+        mc:Ignorable="d"        
+        WindowStartupLocation="CenterScreen"
+         Height="450" Width="625"  WindowState="Normal" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         xmlns:properties="clr-namespace:progetto.Properties"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Title="Send to your friends" 
+       Icon="icon.ico"
+        TextElement.FontWeight="Regular"
+        ResizeMode="NoResize"
+        TextElement.FontSize="13"
+        Closing="Window_Closing"
+      
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Window.Resources>
+        <Style TargetType="TextBlock" BasedOn="{StaticResource MaterialDesignCaptionTextBlock}" x:Key="Caption">
+            <Setter Property="Opacity" Value=".68"></Setter>
+        </Style>
+        <DataTemplate x:Key="FileItem">
+            <materialDesign:Chip Content="{Binding Name}"
+                                 IsDeletable="True"
+                                 Background="White"
+                                 Margin="0 0 4 4"    
+                                 BorderThickness="1"
+                                 
+                                 
+                                
+                                 DeleteClick="ButtonsDemoChip_OnDeleteClick"
+                                 ToolTip="{Binding Percorso}"    
+                                
+                                 DeleteToolTip=" delete this file"
+                                 >
+                <materialDesign:Chip.Icon >
+
+                    <Image  Source="{Binding immagine}"  Margin="5"  >
+
+
+                    </Image>
+                </materialDesign:Chip.Icon>
+            </materialDesign:Chip>
+        </DataTemplate>
+        <DataTemplate x:Key="PersonItem">
+            <materialDesign:TransitioningContent>
+                <ContentControl  x:Name="MyControl">
+                    <StackPanel Name="stack_panel_button"   Margin="10,10,10,10" IsEnabled="True"  MouseLeftButtonUp="StackPanel_MouseLeftButtonUp">
+                    <Grid Uid="Immagine">
+                        <Ellipse Height="110" Width="110" HorizontalAlignment="Center"  Uid="Immagine" VerticalAlignment="Bottom" >
+                            <Ellipse.Fill>
+
+                                <ImageBrush Stretch="UniformToFill"  ImageSource="{Binding foto}" />
+
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse Height="20"
+                           Width="20"
+                           HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                             Uid="Immagine_v"
+                             Visibility="Collapsed">
+                            <Ellipse.Fill>
+                                <ImageBrush Stretch="UniformToFill" ImageSource="v.png" Opacity="1"       />
+
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+                    <TextBlock  Text="{Binding Name}" TextAlignment="Center"   Uid="Nome" FontSize="20" HorizontalAlignment="Stretch"   TextTrimming="CharacterEllipsis"  Width="90" />
+                    <TextBlock Text="{Binding Address}" Uid="Address" FontSize="10" HorizontalAlignment="Center"  Margin="10,0,10,0"/>
+                    <TextBlock Text="0 seconds"
+                           Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               FontSize="10"
+                           HorizontalAlignment="Center" Uid="Tempo"  Margin="10,0,20,0"
+                               Visibility="Collapsed"/>
+                    <Grid Uid="ProgressBarGrid" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90*"/>
+                            <ColumnDefinition Width="5*"/>
+                        </Grid.ColumnDefinitions>
+                        <ProgressBar Style="{StaticResource MaterialDesignCircularProgressBar}"                     
+                    
+                     IsIndeterminate="True" Grid.Column="0" Minimum="0" Maximum="100"  Value="35" Uid="ProgressBar" Margin="0 0 0 12"/>
+
+
+
+                        <TextBlock Text="..compression in progress.." TextTrimming="CharacterEllipsis"
+                           Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               FontSize="12"
+                               Visibility="Collapsed"
+                           HorizontalAlignment="Center" Uid="compressione"  Margin="0,0,0,0"   />
+
+                        <TextBlock Text="0 %"
+                           Style="{StaticResource MaterialDesignBody1TextBlock}"
+                               FontSize="10" Visibility="Collapsed"
+                           HorizontalAlignment="Center" Uid="percentuale"  Margin="0,12,0,0"
+                                 
+                                   />
+
+
+                        <Button Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                     Margin="0,50,0,0"  Width="115" Uid="delete" Visibility="Collapsed" Click="delete_Click" Name="delete" >
+                            Stop this
+                        </Button>
+
+
+                    </Grid>
+                </StackPanel>
+                </ContentControl>
+            </materialDesign:TransitioningContent>
+        </DataTemplate>
+
+
+
+
+    </Window.Resources>
+
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="31*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid Background="#3f417a" Grid.RowSpan="6" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0"></Grid>
+
+        <ScrollViewer Grid.RowSpan="5" Grid.Column="3" Grid.ColumnSpan="18" Grid.Row="0"
+                      VerticalScrollBarVisibility="Auto" >
+            <ItemsControl   Name ="Persone" ItemsSource="{Binding PersoneOne}"  ItemTemplate="{StaticResource PersonItem}" HorizontalContentAlignment="Center" Width="465" Padding="20" >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"   ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="wPanel"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </ScrollViewer>
+        <ScrollViewer Padding="10" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto" >
+            <ItemsControl   Name ="File" ItemsSource="{Binding Lista_file}" ItemTemplate="{StaticResource FileItem}" HorizontalContentAlignment="Center" Height="auto" Width="379"  >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel  Orientation="Horizontal"   ScrollViewer.HorizontalScrollBarVisibility="Disabled" Name="wPanel" Margin="0,0,236,0"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+
+
+        </ScrollViewer>
+
+        <materialDesign:DrawerHost Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="0" Grid.RowSpan="6" >
+            <materialDesign:DrawerHost.LeftDrawerContent>
+
+
+                <StackPanel Width="160" >
+
+                    <Grid Height="420"  >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+                            <RowDefinition Height="25*"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="25*" />
+                            <ColumnDefinition Width="25*" />
+                            <ColumnDefinition Width="25*" />
+                            <ColumnDefinition Width="25*" />
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Row="0"  Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="5">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="33*"/>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Button Background="Transparent" BorderBrush="Transparent" Foreground="#DD0F1481" Grid.ColumnSpan="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <materialDesign:PackIcon Kind="Menu" />
+                                </Button>
+                                <Button Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}" Opacity="0.5"   Grid.ColumnSpan="5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                        CommandParameter="{x:Static Dock.Left}"
+                                        
+                        Style="{StaticResource MaterialDesignFlatButton}" Height="Auto"   
+                                        
+                         />
+
+                                <ContentControl Content="{Binding UtenteOne}" Grid.Row="1"  Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="102"  >
+                                    <ContentControl.ContentTemplate >
+                                        <DataTemplate>
+
+                                            <StackPanel Height="80" Width="auto" >
+                                                <Ellipse Height="80" Width="80" Stroke="#DD0F1481"  >
+
+
+                                                    <Ellipse.Fill   >
+
+
+                                                        <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Source={x:Static properties:Settings.Default},Path=Foto}"   />
+
+                                                    </Ellipse.Fill>
+
+                                                </Ellipse>
+
+                                            </StackPanel>
+
+                                        </DataTemplate>
+
+                                    </ContentControl.ContentTemplate>
+                                </ContentControl>
+                                <TextBlock  Style="{StaticResource MaterialDesignDisplay4TextBlock}"  Uid="Nome" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" FontSize="12" Text="{Binding Source={x:Static properties:Settings.Default},Path=User}" TextAlignment="Center" />
+
+
+
+                            </Grid>
+
+                        </Border>
+                        <Border Grid.Row="3" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="4">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+                                    <RowDefinition Height="25*"/>
+
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="35*" />
+
+                                    <ColumnDefinition Width="31*" />
+                                    <ColumnDefinition Width="31*" />
+                                    <ColumnDefinition Width="32*" />
+                                    <ColumnDefinition Width="31*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--  <Button Background="Transparent" BorderBrush="Transparent" Grid.ColumnSpan="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left">
+                                    <materialDesign:PackIcon Kind="Menu" />
+                                </Button>
+                                <Button Opacity="0.5" Grid.ColumnSpan="5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                        CommandParameter="{x:Static Dock.Left}"
+                        Style="{StaticResource MaterialDesignFlatButton}" Height="Auto"                  
+                         /> 
+                                <Button Grid.Row="0" Grid.RowSpan="1"  Click="setting_metod"    Style="{StaticResource MaterialDesignFlatButton}" Grid.ColumnSpan="2"  Grid.Column="0" HorizontalAlignment="Right"  VerticalAlignment="Center" Margin="0,8,10,8" Width="56" >
+                                    <materialDesign:PackIcon Kind="Settings"  />
+                                </Button>
+                                <Button  Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                        CommandParameter="{x:Static Dock.Left}"
+                          Grid.Row="0" Grid.RowSpan="1" Grid.Column="1"  HorizontalAlignment="Left" Grid.ColumnSpan="4"
+                        Style="{StaticResource MaterialDesignFlatButton}"
+                        Click="setting_metod" Height="Auto"  Width="auto"  >
+                                    SETTINGS
+                                </Button>
+                                -->
+                                <Button Grid.Row="0" Background="Transparent"  Foreground="#DD0F1481"  BorderBrush="Transparent" Grid.RowSpan="1"  Click="setting_metod"     Grid.ColumnSpan="2"  Grid.Column="0" HorizontalAlignment="center"  VerticalAlignment="Center"  >
+                                    <materialDesign:PackIcon Kind="Settings"  />
+                                </Button>
+                                <Button   
+                          Grid.Row="0" Grid.RowSpan="1"  Background="Transparent" BorderBrush="Transparent" Grid.Column="1"  HorizontalAlignment="Left" Grid.ColumnSpan="4"
+                      Click="setting_metod" Height="Auto" Width="auto" Foreground="#DD0F1481" >
+                                    SETTINGS
+                                </Button>
+                                <Button Opacity="0.5"   Click="setting_metod" Style="{StaticResource MaterialDesignFlatButton}" 
+                         Grid.ColumnSpan="5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                        Height="Auto"   />
+                                <Button   
+                          Grid.Row="1" Grid.RowSpan="1"  Background="Transparent" BorderBrush="Transparent" Grid.Column="1"  HorizontalAlignment="Left" Grid.ColumnSpan="3"
+                      Height="Auto" Width="auto" Foreground="#DD0F1481"  >
+                                    ONLINE
+                                </Button>
+                                <Button Grid.Row="1" Background="Transparent"  Foreground="#DD0F1481"  BorderBrush="Transparent" Grid.RowSpan="1"  Click="setting_metod"     Grid.ColumnSpan="2"  Grid.Column="0" HorizontalAlignment="center"  VerticalAlignment="Center"  >
+                                    <materialDesign:PackIcon Kind="AccountConvert"  />
+                                </Button>
+                                <ToggleButton HorizontalAlignment="Center"  VerticalAlignment="Center"   Grid.Row="1"  Grid.Column="3" 
+                                     IsChecked="{Binding Source={x:Static properties:Settings.Default},Path=online}"   Height="20" Grid.ColumnSpan="2"  >
+                                    <materialDesign:PackIcon Kind="AccountOff" Height="24" Width="24" />
+                                    <materialDesign:ToggleButtonAssist.OnContent>
+
+                                        <materialDesign:PackIcon Kind="AccountCheck"/>
+
+                                    </materialDesign:ToggleButtonAssist.OnContent>
+                                </ToggleButton>
+
+                                <Button Opacity="0.5"  Style="{StaticResource MaterialDesignFlatButton}" 
+                         Grid.ColumnSpan="5" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                        Height="Auto" Click="ToggleButton_Click"   />
+
+                            </Grid>
+                        </Border>
+
+
+                        <!-- <Button Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                        Margin="4" HorizontalAlignment="Center"
+                        Style="{DynamicResource MaterialDesignFlatButton}">
+                        CLOSE MENU
+                    </Button> -->
+
+
+                    </Grid>
+                </StackPanel>
+
+            </materialDesign:DrawerHost.LeftDrawerContent>
+
+
+            <Grid Grid.Column="0" Uid="quadro" Grid.RowSpan="6" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="163*"/>
+                    <ColumnDefinition Width="147*"/>
+                    <ColumnDefinition Width="154*"/>
+                    <ColumnDefinition Width="155*"/>
+
+
+                </Grid.ColumnDefinitions>
+                <Button Background="Transparent" BorderBrush="Transparent" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,6,0,7" Width="48">
+                    <materialDesign:PackIcon Kind="Menu" />
+                </Button>
+                <TextBlock Uid="lista_vuota" Name="lista_vuota_2" Visibility="Visible"
+                    Grid.Row="2" Text="empty" Grid.Column="0" Foreground="Gray" TextAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="1" Height="16" Margin="0,30,0,29" >
+
+
+                </TextBlock>
+                <Button Opacity="0.5" Grid.Column="0" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                        CommandParameter="{x:Static Dock.Left}"
+                        Style="{StaticResource MaterialDesignFlatButton}" Height="Auto"                  
+                         />
+            </Grid>
+        </materialDesign:DrawerHost>
+
+        <Button Name="share_button"  HorizontalAlignment="Right"  Click="ButtonBase_OnClickAsync"  Height="30" Width="110" Content="Share" Grid.Column="0" Grid.Row="5" Margin="0,0,20,0" Grid.ColumnSpan="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+
+
+
+    </Grid>
+
+
+
+</Window>
+    
+    
+
+
+    
+    

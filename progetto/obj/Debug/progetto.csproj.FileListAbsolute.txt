@@ -1,0 +1,167 @@
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\progetto.exe
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\MaterialDesignColors.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\MainWindow.g.cs
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\Window1.g.cs
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\App.g.cs
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto_MarkupCompile.cache
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto_MarkupCompile.lref
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto.exe
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto.pdb
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\progetto.exe.config
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\progetto.exe
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\progetto.pdb
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\MaterialDesignColors.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\Microsoft.Expression.Controls.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\Microsoft.Expression.Controls.xml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\App.baml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\MainWindow.baml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\Window1.baml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto.g.resources
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto.Properties.Resources.resources
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto.csproj.GenerateResource.Cache
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto - Copia\progetto\obj\Debug\progetto.csproj.CoreCompileInputs.cache
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\progetto.exe.config
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\Microsoft.Expression.Controls.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\Microsoft.Expression.Controls.xml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\MainWindow.baml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\Window1.baml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\App.baml
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\MainWindow.g.cs
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\Window1.g.cs
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\App.g.cs
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto_MarkupCompile.cache
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto_MarkupCompile.lref
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto.g.resources
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto.Properties.Resources.resources
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto.csproj.GenerateResource.Cache
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto.csproj.CoreCompileInputs.cache
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto.exe
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\obj\Debug\progetto.pdb
+C:\Users\articolo31\Documents\Visual Studio 2017\Projects\progetto\progetto\bin\Debug\progetto.pdb
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\progetto.exe.config
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\progetto.exe
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\progetto.pdb
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MahApps.Metro.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialDesignColors.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialMenu.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\Microsoft.Expression.Controls.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MahApps.Metro.pdb
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MahApps.Metro.xml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialDesignColors.pdb
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\Microsoft.Expression.Controls.xml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\MainWindow.g.cs
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\Window2.g.cs
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\App.g.cs
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto_MarkupCompile.cache
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto_MarkupCompile.lref
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\App.baml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\MainWindow.baml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\Window2.baml
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.g.resources
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.Properties.Resources.resources
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.csproj.GenerateResource.Cache
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.csproj.CoreCompileInputs.cache
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.exe
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.pdb
+C:\Users\articolo31\Google Drive\progetto - Copia (5)\progetto\obj\Debug\progetto.csprojResolveAssemblyReference.cache
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\progetto.exe.config
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\progetto.exe
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\progetto.pdb
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\AForge.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\AForge.Video.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MahApps.Metro.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialDesignColors.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialMenu.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\Microsoft.VisualStudio.PerformanceTools.Automation.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\System.Runtime.WindowsRuntime.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\Windows.winmd
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\EnvDTE.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\stdole.dll
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\AForge.xml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\AForge.Video.xml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MahApps.Metro.pdb
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MahApps.Metro.xml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.csprojResolveAssemblyReference.cache
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\MainWindow.g.cs
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\Window1.g.cs
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\Window2.g.cs
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\App.g.cs
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto_MarkupCompile.cache
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto_MarkupCompile.lref
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\App.baml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\MainWindow.baml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\Window1.baml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\Window2.baml
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.g.resources
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.Properties.Resources.resources
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.csproj.GenerateResource.Cache
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.csproj.CoreCompileInputs.cache
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.exe
+C:\Users\Articolo31\Desktop\progetto - Copia (14)\progetto\obj\Debug\progetto.pdb
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\progetto.exe
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialDesignColors.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\progetto.exe.config
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\AForge.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\AForge.Video.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MahApps.Metro.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialMenu.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\Microsoft.VisualStudio.PerformanceTools.Automation.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\System.Runtime.WindowsRuntime.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\Windows.winmd
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\EnvDTE.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\stdole.dll
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\AForge.xml
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\AForge.Video.xml
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MahApps.Metro.pdb
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MahApps.Metro.xml
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\MainWindow.g.cs
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\Window1.g.cs
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\Window2.g.cs
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\App.g.cs
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto_MarkupCompile.cache
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto_MarkupCompile.lref
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\App.baml
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\MainWindow.baml
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\Window1.baml
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\Window2.baml
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.g.resources
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.Properties.Resources.resources
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.csproj.GenerateResource.Cache
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.csproj.CoreCompileInputs.cache
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.exe
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.pdb
+C:\Users\Articolo31\Google Drive\progetto\progetto\bin\Debug\progetto.pdb
+C:\Users\Articolo31\Google Drive\progetto\progetto\obj\Debug\progetto.csprojResolveAssemblyReference.cache

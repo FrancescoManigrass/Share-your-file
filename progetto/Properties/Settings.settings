@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="progetto.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="User" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Nessuno</Value>
+    </Setting>
+    <Setting Name="Foto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">user.png</Value>
+    </Setting>
+    <Setting Name="online" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="download" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Public\Downloads</Value>
+    </Setting>
+    <Setting Name="modificafoto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no</Value>
+    </Setting>
+    <Setting Name="avvio" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="all_file" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="new_folder" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="online_string" Type="System.String" Scope="User">
+      <Value Profile="(Default)">online</Value>
+    </Setting>
+    <Setting Name="yourself" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

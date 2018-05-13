@@ -1,0 +1,303 @@
+﻿<Window x:Class="progetto.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:progetto"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         xmlns:properties="clr-namespace:progetto.Properties"
+        
+          mc:Ignorable="d"
+        Title="Send to your friends - Profile settings"  Icon="icon.ico"
+            Closing="Window_Closing"
+          Height="550" Width="400"   ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.CheckBox.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ListBox.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.RadioButton.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBlock.xaml" />
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ToggleButton.xaml" />
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="148*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="58"/>
+            <RowDefinition Height="57*"/>
+
+            <RowDefinition Height="0*"/>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="0*"/>
+
+
+
+
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Border   Background="#FFD6D3D3" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="1" Grid.RowSpan="3"     >
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64*"></ColumnDefinition>
+                    <ColumnDefinition Width="7*"></ColumnDefinition>
+                    <ColumnDefinition Width="226*"></ColumnDefinition>
+                    <ColumnDefinition Width="11*"></ColumnDefinition>
+                    <ColumnDefinition Width="64*"></ColumnDefinition>
+                    <ColumnDefinition Width="16*"></ColumnDefinition>
+
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="42*"></RowDefinition>
+
+                    <RowDefinition Height="54*"></RowDefinition>
+                    <RowDefinition Height="61*"></RowDefinition>
+
+                    <RowDefinition Height="47*"></RowDefinition>
+                    <RowDefinition Height="54*"></RowDefinition>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" Grid.Column="2" Grid.RowSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="162*"></ColumnDefinition>
+                        <ColumnDefinition Width="67*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*"></RowDefinition>
+                        <RowDefinition Height="25*">
+
+                        </RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <!--  <materialDesign:PackIcon Kind="Camera"  Background="Transparent" Foreground="#DD0F1481" BorderBrush="Transparent"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right"  Grid.ColumnSpan="2" Height="22" Width="22"  Margin="0,0,55,0" />
+                 
+                    <Button Opacity="0.5" Click="Button_Click_2"  Style="{StaticResource MaterialDesignFlatButton}" 
+                         Grid.ColumnSpan="2" Grid.Row="1" Width="30" VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                         Grid.RowSpan="1" Height="22"   Margin="0,0,51,0" />
+
+                    <materialDesign:PackIcon Kind="Paperclip"   Foreground="#DD0F1481" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Left"  Grid.ColumnSpan="1"  Height="20" Width="20" Margin="17,0,0,3" />
+                    <Button Opacity="0.5" Click="Button_Click1"    Style="{StaticResource MaterialDesignFlatButton}" 
+                         Grid.ColumnSpan="1" Grid.Column="1" Width="20" Grid.Row="1" VerticalAlignment="Bottom"  HorizontalAlignment="Left" Margin="17,0,0,3" 
+                         Grid.RowSpan="1" Height="22"   />
+                    -->
+
+
+
+
+
+                </Grid>
+                <ContentControl Content="{Binding UtenteOne}" Grid.Row="0"  Grid.Column="2" Grid.RowSpan="3"   VerticalAlignment="Top" Grid.ColumnSpan="1" Height="160"  >
+                    <ContentControl.ContentTemplate >
+                        <DataTemplate>
+
+                            <StackPanel >
+                                <Ellipse Height="130" Width="130" Margin="15"  >
+
+                                    <Ellipse.Fill>
+
+
+                                        <ImageBrush Stretch="UniformToFill"  ImageSource="{Binding Source={x:Static properties:Settings.Default},Path=Foto}"  />
+
+                                    </Ellipse.Fill>
+
+                                </Ellipse>
+
+                            </StackPanel>
+
+                        </DataTemplate>
+
+                    </ContentControl.ContentTemplate>
+                </ContentControl>
+                <Grid Grid.Column="2" Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="153*"></ColumnDefinition>
+                        <ColumnDefinition Width="76*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <materialDesign:PopupBox Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}" 
+                                             VerticalAlignment="Center"
+                                 PlacementMode="RightAndAlignBottomEdges" UnfurlOrientation="Vertical"
+                                  FlowDirection="LeftToRight"    ToolTipService.Placement="Right"
+                                  Height="26"  Width="26" Grid.Column="1" 
+
+                               >
+                        <StackPanel>
+
+                            <Button ToolTip="Broswer" Click="Button_Click1" Background="White" >
+                                <materialDesign:PackIcon Kind="Paperclip" Background="Transparent"   Foreground="#DD0F1481" BorderBrush="Transparent"  ></materialDesign:PackIcon>
+                            </Button>
+
+                            <Button ToolTip="Camera"  Click="Button_Click_2" Background="White" >
+                                <materialDesign:PackIcon Kind="Camera" Background="Transparent"   Foreground="#DD0F1481" BorderBrush="Transparent"  ></materialDesign:PackIcon>
+                            </Button>
+
+
+
+                        </StackPanel>
+
+                    </materialDesign:PopupBox>
+                </Grid>
+                <TextBox x:Name="txt_username" Uid="nome_nuovo" FontSize="25"  IsReadOnly="True" Background="Transparent"   materialDesign:HintAssist.Hint="username"    Text="{Binding Source={x:Static properties:Settings.Default},Path=User}" TextAlignment="Center" Grid.Row="3"   Grid.Column="2" />
+                <TextBox x:Name="txt_username2" Uid="nome_nuovo" Visibility="Collapsed" IsEnabled="true"  Background="Transparent" materialDesign:HintAssist.Hint="username"   TextAlignment="Center"     Grid.Row="3"   Grid.Column="2" />
+                <materialDesign:PackIcon Kind="AccountCardDetails" Width="20" Height="20" Foreground="Gray" BorderBrush="Transparent" Background="Transparent" Grid.Row="3" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="center"  Grid.ColumnSpan="1" />
+
+                <Button    Foreground="#DD0F1481" Name="immagine_txt"
+                           Visibility="Visible"
+                            BorderBrush="Transparent" Background="Transparent" 
+                           Grid.Column="3" Grid.Row="3" Grid.RowSpan="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.ColumnSpan="2"    >
+                    <materialDesign:PackIcon Kind="LeadPencil" BorderBrush="Transparent" Background="Transparent"  VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+                </Button>
+
+                <Button Opacity="0.5"  Click="Button_Click_1" Style="{StaticResource MaterialDesignFlatButton}" 
+                         Grid.ColumnSpan="2"  Grid.Column="3" Grid.Row="3" Grid.RowSpan="1" Height="Auto" Margin="0,16,29,0" 
+                          />
+
+                <Button    Foreground="#DD0F1481" Name="immagine2_txt" 
+                           Visibility="Hidden" Click="Button_Click_1"
+                            BorderBrush="Transparent" Background="Transparent" 
+                              Grid.Column="3" Grid.Row="3" Grid.RowSpan="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"  Grid.ColumnSpan="2"   >
+                    <materialDesign:PackIcon Kind="ContentSaveSettings"  Foreground="#DD0F1481" BorderBrush="Transparent" Background="Transparent" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+
+                </Button>
+
+
+
+
+                <ToggleButton Style="{StaticResource MaterialDesignSwitchAccentToggleButton}" VerticalAlignment="Top" Grid.Row="4"  Grid.Column="2" 
+    ToolTip="MaterialDesignSwitchAccentToggleButton" IsChecked="{Binding Source={x:Static properties:Settings.Default},Path=online}" Click="ToggleButton_Click"  Height="20" Margin="2,158,5,-124"  />
+                <TextBlock x:Name="online_text"  Style="{StaticResource MaterialDesignTitleTextBlock}" FontSize="12"  Grid.Row="4" Grid.Column="2" Text="{Binding Source={x:Static properties:Settings.Default},Path=online_string}" VerticalAlignment="Center" TextAlignment="Center"  HorizontalAlignment="Center" Height="16"  Width="34"  />
+            </Grid>
+        </Border>
+        <Border Background="#eee"  Grid.Row="5" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="4">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="46*"></ColumnDefinition>
+
+                    <ColumnDefinition Width="260*"></ColumnDefinition>
+                    <ColumnDefinition Width="64*"></ColumnDefinition>
+                    <ColumnDefinition Width="16*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <TextBlock  VerticalAlignment="Center"  TextDecorations="baseline" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.Row="0"  Grid.RowSpan="1"  Grid.Column="1" Grid.ColumnSpan="1" Text="{Binding Source={x:Static properties:Settings.Default},Path=download}"  FontSize="14" Height="19" Margin="0,16"  />
+                <materialDesign:PackIcon Kind="Download" Foreground="#DD0F1481" BorderBrush="Transparent" Background="Transparent" Grid.Row="0" Grid.Column="2" VerticalAlignment="center" HorizontalAlignment="center"  Grid.ColumnSpan="1" Height="25"  Width="25" />
+                <materialDesign:PackIcon Kind="FolderDownload" Foreground="Gray"  Grid.Row="0" Grid.Column="0" VerticalAlignment="center" HorizontalAlignment="center"  Grid.ColumnSpan="1" Width="20" Height="20" />
+
+                <Button Opacity="0.5" Click="Button_Click_3"  Style="{StaticResource MaterialDesignFlatButton}" 
+                         Grid.ColumnSpan="1" Grid.Column="2" Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                        Height="Auto"   Grid.RowSpan="1"  />
+                <ToggleButton Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1"  Name="Request"
+                
+                Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"  
+                      
+                        
+                          IsChecked="{Binding Source={x:Static properties:Settings.Default},Path=new_folder}"
+                          Click="ToggleButton_Click_1" Height="18"  Width="34"
+                    >
+                    <materialDesign:PackIcon Kind="BellOff" Height="24" Width="24" />
+                    <materialDesign:ToggleButtonAssist.OnContent>
+
+                        <materialDesign:PackIcon Kind="Bell"/>
+
+                    </materialDesign:ToggleButtonAssist.OnContent>
+                </ToggleButton>
+
+                <ToggleButton Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="1"  
+                Style="{StaticResource MaterialDesignSwitchAccentToggleButton}"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"  
+                          IsChecked="{Binding Source={x:Static properties:Settings.Default},Path=all_file}"
+                          Click="Request_Click" Height="18"  Width="34" 
+                    >
+                    <materialDesign:PackIcon Kind="Airballoon" Height="24" Width="24" />
+                    <materialDesign:ToggleButtonAssist.OnContent>
+
+                        <materialDesign:PackIcon Kind="Airballoon"/>
+
+                    </materialDesign:ToggleButtonAssist.OnContent>
+                </ToggleButton>
+
+                <TextBlock VerticalAlignment="Center" TextDecorations="baseline" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.Row="1"  Grid.Column=" 1" Grid.RowSpan="1" Text=" Accept all files " FontSize="14" Height="20" Margin="0,16"  />
+                <materialDesign:PackIcon Kind="FileMultiple" Width="20" Height="20" Foreground="Gray" BorderBrush="Transparent" Background="Transparent" Grid.Row="1" Grid.Column="0" VerticalAlignment="center" HorizontalAlignment="center"  Grid.ColumnSpan="1" />
+
+                <TextBlock VerticalAlignment="Center" TextDecorations="baseline" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.Row="2"  Grid.Column=" 1" Grid.RowSpan="1" Text=" Change default download folder " FontSize="14" Height="19" Margin="0,16"  />
+                <materialDesign:PackIcon Kind="FolderLock" Width="20" Height="20" Foreground="Gray" BorderBrush="Transparent" Background="Transparent" Grid.Row="2" Grid.Column="0" VerticalAlignment="center" HorizontalAlignment="center"  Grid.ColumnSpan="1"  />
+
+                <TextBlock VerticalAlignment="Center" TextDecorations="baseline" Style="{StaticResource MaterialDesignTitleTextBlock}" Grid.Row="3"  Grid.Column=" 1" Grid.RowSpan="1" Text=" Find yourserlf " FontSize="14" Height="19" Margin="0,16"  />
+                <materialDesign:PackIcon Kind="AccountStarVariant" Width="20" Height="20" Foreground="Gray" BorderBrush="Transparent" Background="Transparent" Grid.Row="3" Grid.Column="0" VerticalAlignment="center" HorizontalAlignment="center"  Grid.ColumnSpan="1"  />
+
+                <ToggleButton Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1"  Name="yurself"
+                
+                Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"  
+                      
+                        
+                          IsChecked="{Binding Source={x:Static properties:Settings.Default},Path=yourself}"
+                          Click="yurself_Click" Height="18"  Width="34"
+                    >
+                    
+                    <materialDesign:PackIcon Kind="AccountOutline" Height="24" Width="24" />
+                    <materialDesign:ToggleButtonAssist.OnContent>
+
+                        <materialDesign:PackIcon Kind="AccountNetwork"/>
+
+                    </materialDesign:ToggleButtonAssist.OnContent>
+                </ToggleButton>
+
+            </Grid>
+        </Border>
+
+
+    </Grid>
+
+
+
+
+
+</Window>
